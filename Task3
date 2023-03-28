@@ -1,0 +1,120 @@
+<html>
+    <title>
+        Temperature Converter
+    </title>
+    <head>
+        <style>
+            .container{
+                width:100%;
+                height:100%;
+                background-image: url(bg3.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                        }
+            .container h1{
+                color:rgb(247, 7, 191);
+                font-weight: 700;
+                font-size: 35px;
+                text-align: initial ;
+                position: absolute;
+                bottom: 500px;
+                left: 300px;
+                         } 
+            .col1 label{
+                color: rgb(247, 7, 191);
+                font-weight: 500;
+                font-size: 25px;
+                position: absolute;
+                bottom: 470px;
+                left: 300px;
+            }   
+            .col2 label{
+                color: rgb(247, 7, 191);
+                font-weight: 500;
+                font-size: 25px;
+                position: absolute;
+                bottom: 440px;
+                left: 300px;
+            }   
+            .col3 label{
+                color: rgb(247, 7, 191);
+                font-weight: 500;
+                font-size: 25px;
+                position: absolute;
+                bottom: 410px;
+                left: 300px;
+
+            }   
+            .col1 input{
+                width: 150px;
+                height:20px;
+                position: absolute;
+                bottom: 470px;
+                left: 430px;
+            }
+            .col2 input{
+                width: 150px;
+                height:20px;
+                position: absolute;
+                bottom: 440px;
+                left: 430px;
+            } 
+            .col3 input{
+                width: 150px;
+                height:20px;
+                position: absolute;
+                bottom: 410px;
+                left: 430px;
+            }         
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="converter-row">
+        <p>
+            <div class="col1">
+            <label>Fahrenheit :</label>
+            <input id="fahrenheit" type="number" placeholder="Fahrenheit">
+            </div>
+        </p>
+        <p>
+           <div class="col2">
+            <label>Celcius:</label>
+            <input id="celcius" type="number" placeholder="Celcius" >
+            </div>
+        </p>
+        <p>
+            <div class="col3">
+            <label>Kelvin :</label>
+            <input id="kelvin" type="number" placeholder="Kelvin">
+            </div>
+        </p>
+        </div>
+        </div>    
+    <script>
+        let celcius=document.getElementById('celcius');
+        let fahrenheit=document.getElementById('fahrenheit');
+        let kelvin=document.getElementById('kelvin');
+        celcius.oninput=function (){
+            let f=(parseFloat(celcius.value)*9)/5+32;
+            fahrenheit.value=parseFloat(f.toFixed(2));
+            let k=(parseFloat(celcius.value)+273.15);
+            kelvin.value=parseFloat(k.toFixed(2));
+        }
+        fahrenheit.oninput=function (){
+            let c=((parseFloat(fahrenheit.value)-32)*5)/9;
+            celcius.value=parseFloat(c.toFixed(2));
+            let k=(parseFloat(fahrenheit.value)-32)*5/9+273.15;
+            kelvin.value=parseFloat(k.toFixed(2));
+        }
+        kelvin.oninput=function (){
+            let c=(parseFloat(kelvin.value)-273.15);
+            celcius.value=parseFloat(c.toFixed(2));
+            let f =(parseFloat(kelvin.value)-273.15)*9/5+32;
+            fahrenheit.value=parseFloat(toFixed(2));
+        }
+
+    </script>
+    </body>
+</html>
