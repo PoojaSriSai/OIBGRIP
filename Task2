@@ -1,0 +1,81 @@
+<html>
+        <head>
+            <title>
+                Portfolio
+                </title>
+        <style>
+            ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+            p{
+                font-style:italic;
+                font-size: 30px; 
+            color: white;
+            }
+            pre{
+                font-style:roman;
+                font-size: 30px; 
+            color: gold;
+            }
+            pre.about{
+                font-size: 15;
+                color: white;
+            }
+            p.mail{
+                font-size:20px; 
+            color: white;
+            }
+            body{
+                background-repeat: no-repeat;
+               background-size: 100% 50%;
+            }
+           .image{
+                width:100%;
+                height:100%;
+            }
+        </style>
+        </head>
+        <body background="bg2.jpg">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Contact">Contact</a></li>
+              </ul>
+              <img src="image.jpeg" height=650 width="400" align="left">
+            <pre style="font-size: 100px;font-family: serif;">    <i><b>Hello! I'm<br>    Pooja Kamisetty</b></i></pre>
+           <p> Web designer and Web developer</p>
+           <p class ="mail"> &#9993poojasrisaikamisetty@gmail.com</p><br><br><br>
+           <img src="bg.jpg" align="right" class="image">
+           <pre style="font-family:serif;" id="About">A bit about me</pre>
+           <pre class="about">My name is Pooja Sri Sai Kamisetty. I graduated from MIT a month ago. Now, I am looking for my first full-time job. I have been working as a freelance web developer for the last three years and 
+cooperated with several startups. I cannot say with 100% confidence where I see myself in five years or what my big career goal is. The world is changing rapidly, and I don't have 
+enough professional experience to be certain about such things. However, I know that I can provide a fresh take and an extraordinary approach to every project. I am always open to 
+challenges and constructive feedback. I am open-minded and learn new things quickly. I want to become a team player and dedicate all my skills and talents to develop high-quality 
+and unique products.I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. I believe that a person should work on developing their 
+professional skills and learning new things all the time. 
+</pre>
+            <pre style="font-family:serif;" id="Skills">My skills                                                                                 Projects Done</pre>
+            <pre style="color: white;">&#9758;Photography&#x1F4F7;                            &#9758;Landing Page
+&#9758;Web Design <img src="p1.jpg" width=20 height=25>                             &#9758;Portfolio
+&#9758;Photoshop <img src="p2.jpg" width="20" height="20">                              &#9758;Temperature Convertor
+        </pre>
+            <pre style="font-family:serif;" id="Contact">Contact me</pre>
+            <pre style="color: white;font-family: serif;font-size: 25px;"><img src="p3.jpg" width=30 height=30>  Hyderabad
+📞 Phone : +91 8019942459
+&#9993 poojasrisaikamisetty@gmail.com
+        </pre>
+</body>
