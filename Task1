@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <title>Hotel Landing Page</title>
+<style type:"text/css";>
+ *{padding: 0;margin:0;box-sizing: border-box;}
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content{
+    padding: 20px;
+    font-size: 40px;
+    font-family: 'Courgette';
+}
+
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header{
+    height: 65px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.logo{
+    font-family: 'Sans Serif';
+}
+
+.header-left{
+    float: left;
+    padding-left: 200px;
+}
+
+.header-right{
+    padding-top: 20px;
+    float: right;
+}
+
+.header-right a{
+    float: left;
+    line-height: 65px;
+    padding: 0 30px;
+    color: white;
+    display: block;
+}
+
+
+.heading h1{
+    font-family: Sans Serif;
+}
+
+.top-wrapper{
+    padding: 180px 0 100px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.image{
+    background-image: url(hotel.jpg);
+    background-size: cover;
+    height: 720px;    
+    width: 100%;
+  }
+  
+.container h1{
+    font-size: 200px;
+    color:navy;
+    line-height: 3;
+    font-weight: bold;
+}
+
+.top-wrapper.overlay:before {
+    background: rgba(0, 0, 0, 0.45);
+    content: "";                        
+    position: absolute;
+    height: 100vh;
+    min-height: 720px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+.top-wrapper h1{
+    opacity: 0.9;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.top-wrapper p{
+    opacity: 0.9;
+    margin-bottom: 3px;
+}
+.btn{
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin-right:0.5rem;
+
+}
+.btn.uppercase{
+    text-transform:uppercase ;
+    font-size: 20px;
+    letter-spacing: .1em;
+}
+.btn-outline-light{
+    color: white;
+    background-color: transparent;
+    border-color:white ;
+}
+
+.btn-outline-light:hover{
+    color: red;
+    background-color:white ;
+    border-color: white;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <h1 class="logo"></h1>
+            </div>
+            <div class="header-right">
+                <a href="#" class="btn uppercase btn-outline-light">Home</a>
+                <a href="#" class="btn uppercase btn-outline-light">About Us</a>
+                <a href="#" class="btn uppercase btn-outline-light">Service</a>
+                <a href="#" class="btn uppercase btn-outline-light">Contact Us</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="image">
+        <div class="top-wrapper overlay">
+            <div class="container heading">
+                <h1>TAJ HOTEL</h1>
+                <div class="content">
+                    <p>Whisper your dreams to us</p>
+                </div>
+                <p><a href="#" class="btn uppercase btn-outline-light">Check Rooms Availability</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
